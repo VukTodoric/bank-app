@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bank App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h2>Bank App</h2>
+    <button id="accBtn" class="btn btn-primary" type="button" name="button">Accounts</button>
+    <button id="addAccBtn" class="btn btn-info" type="button" name="button">Add accounts</button>
+    <button id="editDelBtn" class="btn btn-warning" type="button" name="button">Edit/Delete</button>
+  </div>
+  <div class="container-fluid">
+    <div id="mainRow" class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="page-header">Accounts</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit card</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- end of mainRow -->
+    <div id="formRow" class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="page-header">Add account</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input type="text" name="id" value="" placeholder="ID" class="form-control"><br>
+            <input type="text" name="name" value="" placeholder="Name" class="form-control"><br>
+            <input type="text" name="deposit" value="" placeholder="Deposit" class="form-control"><br>
+            <input type="text" name="cCard" value="" placeholder="Credit Card" class="form-control"><br>
+            <button id="addToDoBtn" class="btn btn-primary form-control" type="button" name="button">Add Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of formRow -->
+    <div id="editRow" class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="page-header">Edit/Delete</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Deposit</th>
+                  <th>Credit card</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="editBody">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end editRow -->
+    <div id="editFormRow" class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="page-header">Edit account</h3>
+        <div class="row">
+          <div class="col-lg-10 col-lg-offset-1">
+            <input type="text" name="editId" value="" class="form-control"><br>
+            <input type="text" name="editName" value="" class="form-control"><br>
+            <input type="text" name="editDeposit" value="" class="form-control"><br>
+            <input type="text" name="editCcard" value="" class="form-control"><br>
+            <button id="editDbAccBtn" class="btn btn-info form-control" type="button" name="button">Edit Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js">
+  </script>
+</body>
+
+</html>
